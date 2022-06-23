@@ -19,13 +19,17 @@ li {
   font-size: 12px;
 }
 
+a {
+  color: #444444;
+  text-decoration: none;
+}
 #container {
   display: flex;
   flex-direction: row;
 }
 
 .sidebar {
-  width: 30%;
+  width: 25%;
   margin: 10px 0 10px 0;
 }
 
@@ -48,7 +52,7 @@ li {
 }
 
 .content {
-  width: 70%;
+  width: 75%;
   margin: 10px 0 10px 0;
 }
 
