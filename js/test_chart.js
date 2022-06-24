@@ -1,11 +1,14 @@
 var qArray = ['q1','q2','q3','q4'];
-var yesArray = ['q2','q3','a1','a2'];
-var noArray = ['q4','q4','q4','a3'];
+var yesArray = ['q2','q4','a1','a2'];
+var noArray = ['q3','q4','q4','a3'];
 var n=0;
+var count = []
 function OnYesClick() {
+    count.push(1)
     RewriteSrc(yesArray[n])
 }
 function OnNoClick() {
+    count.push(0)
     RewriteSrc(noArray[n])
 }
 function RewriteSrc(nextId) {
