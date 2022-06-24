@@ -5,7 +5,11 @@ var n=0;
 var count = []
 function OnYesClick() {
     count.push(1)
-    RewriteSrc(yesArray[n])
+    if (count.length==3){
+      
+    } else {
+      RewriteSrc(yesArray[n])
+    }
 }
 function OnNoClick() {
     count.push(0)
