@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>パスタ診断</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/test_chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index2.css">
+</head>
+<body>
+    <h1>プログラミング入門におすすめの言語は？</h1>
+    <p>VBA、JavaScript、Pythonの中からどれがおすすめか判定します。</p>
+    <p>※個人的な見解ですので、参考程度にお考えください。</p>
+    <hr />
+    <div id="main">
+        <div id="question_area">
+            <div id="q1" class="txt_display">私は社会人で収入がある</div>
+            <div id="q2" class="txt_hide">プログラミング学習にお金がかかってもいい</div>
+            <div id="q3" class="txt_hide">仕事でよくExcelを使う</div>
+            <div id="q4" class="txt_hide">Webサイト制作に興味がある</div>
+        </div>
+        <div id="result_area" class="txt_hide">
+            <p>あなたにおすすめのプログラミング言語は……</p>
+            <div id="a1" class="txt_hide">
+                <h2>VBA</h2>
+                <p>普段のExcel業務を効率化できるので、目標と成果がはっきりしやすく学習しやすいです。</p>
+                <p>Excelさえあれば動くので環境も準備しやすく、文法もそれほど難しくないのでプログラミング入門として最適です。</p>
+                <p>ただし、MS Officeは有料なため、収入があって投資をいとわない社会人向けと言えるでしょう。</p>
+            </div>
+            <div id="a2" class="txt_hide">
+                <h2>JavaScript</h2>
+                <p>お金をかけず、Webブラウザさえあれば動くJavaScriptはかなりお手軽です。</p>
+                <p>Webサイト制作やWebアプリで必要とされる人気の言語で、マスターすれば趣味から仕事まで選択肢がかなり広がります。</p>
+                <p>HTMLやCSSもセットで覚える必要があるため勉強範囲は広いですが、ほとんどお金がかからないので学生向きといえるでしょう。</p>
+            </div>
+            <div id="a3" class="txt_hide">
+                <h2>Python</h2>
+                <p>Pythonはプログラミングの義務教育や情報処理技術者試験の選択問題にもなるほど現在の主流となっている言語です。</p>
+                <p>文法がシンプルでわかりやすいだけでなく、WebアプリからAIの機械学習までできます。</p>
+                <p>Pythonがインストールされていないと使えないですが、無料なのでその手間を惜しまなければハードルは低いです。</p>
+            </div>
+            <a href="javaScript:OnAgainClick();">もう1回</a>
+        </div>
+        <div id="btn_area" class="txt_display">
+            <a href="javascript:OnYesClick();" id="btn_yes">Yes</a>
+            <a href="javascript:OnNoClick();" id="btn_no">No</a>
+        </div>
+    </div>
+</body>
+<html>

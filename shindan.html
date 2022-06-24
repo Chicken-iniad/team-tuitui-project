@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>パスタ診断</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/test_chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index2.css">
+  </head>
+
+  <body>
+    <h1 id="title"><a href="mainpage.html">ﾂｲﾂｲパスタレシピ</a></h1>
+
+    <p></p><a href="#title" id="top">Top</a>
+
+    <div id="container">
+      <div class="sidebar">
+        <ul>
+          <li><a href="mainpage.html">ホーム</a></li>
+          <li><a href="">レシピ診断</a></li>
+          <li><a href="">レシピ一覧</a></li>
+          <li><a href="">パスタ図鑑</a></li>
+          <li><a href="">調理器具</a></li>
+          <li><a href="">調味料</a></li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <h2>いまのあなたにおすすめのパスタは？</h2>
+        <p>3つの質問であなたにおすすめのパスタをご案内します。</p>
+        <p>※個人的な見解ですので、参考程度にお考えください。</p>
+        <hr />
+        <div id="main">
+            <div id="question_area">
+                <div id="q1" class="txt_display">1</div>
+                <div id="q2" class="txt_hide">1-1</div>
+                <div id="q3" class="txt_hide">1-2</div>
+                <div id="q4" class="txt_hide">1-1-1</div>
+                <div id="q5" class="txt_hide">1-1-2</div>
+                <div id="q6" class="txt_hide">1-2-1</div>
+                <div id="q7" class="txt_hide">1-2-2</div>
+            </div>
+            <div id="result_area" class="txt_hide">
+                <p>あなたにおすすめのプログラミング言語は……</p>
+                <div id="a1" class="txt_hide">
+                    <h2>VBA</h2>
+                    <p>普段のExcel業務を効率化できるので、目標と成果がはっきりしやすく学習しやすいです。</p>
+                    <p>Excelさえあれば動くので環境も準備しやすく、文法もそれほど難しくないのでプログラミング入門として最適です。</p>
+                    <p>ただし、MS Officeは有料なため、収入があって投資をいとわない社会人向けと言えるでしょう。</p>
+                </div>
+                <div id="a2" class="txt_hide">
+                    <h2>JavaScript</h2>
+                    <p>お金をかけず、Webブラウザさえあれば動くJavaScriptはかなりお手軽です。</p>
+                    <p>Webサイト制作やWebアプリで必要とされる人気の言語で、マスターすれば趣味から仕事まで選択肢がかなり広がります。</p>
+                    <p>HTMLやCSSもセットで覚える必要があるため勉強範囲は広いですが、ほとんどお金がかからないので学生向きといえるでしょう。</p>
+                </div>
+                <div id="a3" class="txt_hide">
+                    <h2>Python</h2>
+                    <p>Pythonはプログラミングの義務教育や情報処理技術者試験の選択問題にもなるほど現在の主流となっている言語です。</p>
+                    <p>文法がシンプルでわかりやすいだけでなく、WebアプリからAIの機械学習までできます。</p>
+                    <p>Pythonがインストールされていないと使えないですが、無料なのでその手間を惜しまなければハードルは低いです。</p>
+                </div>
+                <a href="javaScript:OnAgainClick();">もう1回</a>
+            </div>
+            <div id="btn_area" class="txt_display">
+                <a href="javascript:OnYesClick();" id="btn_yes">Yes</a>
+                <a href="javascript:OnNoClick();" id="btn_no">No</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      Team-TuiTui-Project
+    </div>
+  </body>
+</html>
