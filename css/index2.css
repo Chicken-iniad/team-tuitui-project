@@ -7,12 +7,15 @@ h1 {
   padding: 10px 10px 10px 10px;
   border-bottom: solid 4px #ff871f;
   font-family: sans-serif;
-  font-size: 24px;
+  font-size: 36px;
   text-align: left;
   color: #444444;
   background-color: #fff490;
 }
-
+#icon {
+  width: 40px;
+  background-color: #fff490;
+}
 
 li {
   font-family: sans-serif;
