@@ -98,3 +98,7 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
+img {
+  width: 200px;
+  margin: 2px 2px 2px 2px;
+}
