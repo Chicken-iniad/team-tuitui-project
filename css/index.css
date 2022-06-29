@@ -78,6 +78,15 @@ a {
   margin: 0 10px 10px 20px;
 }
 
+#pasta {
+  width: 55%;
+}
+
+#link {
+  width: 30%;
+  
+}
+
 .footer {
   border-top: solid 1px #cccccc;
   font-family: sans-serif;
