@@ -84,7 +84,13 @@ a {
 
 #link {
   width: 31%;
-
+}
+.links {
+  width: 55%;
+  display: flex;
+}
+#html_link {
+  width: 100%;
 }
 
 .footer {
