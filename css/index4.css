@@ -107,10 +107,16 @@ td {
   text-align: center;
 }
 
-.long {
-  background-color: rgb(250, 192, 192);
+#long {
+  background-color: rgb(245, 208, 208);
+  border: double thick rgb(222, 110, 110);
 }
 
-.short {
-  background-color: rgb(194, 217, 252);
+#short {
+  background-color: rgb(207, 222, 246);
+  border: double thick rgb(98, 166, 230);
+}
+
+table {
+  margin-bottom: 10px;
 }
