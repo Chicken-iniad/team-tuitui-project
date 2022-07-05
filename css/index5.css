@@ -98,3 +98,11 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
+
+img {
+  width: 100%;
+}
+
+td {
+  text-align: center;
+}
