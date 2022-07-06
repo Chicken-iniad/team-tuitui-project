@@ -44,6 +44,9 @@ a {
   border-right: solid 4px #ff871f;
   background-color: #fff490;
 }
+.sidebar li:hover, .sidebar li:active, .sidebar li:focus {
+	background-color: #eee490;
+}
 
 .sidebar a {
   color: #444444;
@@ -93,6 +96,17 @@ a {
   background-color: #ff871f;
   color: #ffffff;
   text-decoration: none;
+}
+
+.shindan p a {
+	color: #1b8fc1;
+	border-bottom: solid 1px #1b8fc1;
+}
+
+.shindan p a:hover, .shindan p a:active, .shindan p a:focus {
+	color: #1b8fc1;
+	border-bottom: solid 1px #1b8fc1;
+	background-color: #cccccc;
 }
 
 .shindan p {
