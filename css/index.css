@@ -86,11 +86,14 @@ a {
   width: 31%;
 }
 .links {
-  width: 55%;
+  width: 64%;
   display: flex;
 }
 .html_link {
   width: 100%;
+}
+#tuitui {
+  width: 270%;
 }
 
 .footer {
