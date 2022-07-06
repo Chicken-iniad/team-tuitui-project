@@ -90,14 +90,15 @@ a {
   width: 31%;
 }
 .links {
-  width: 64%;
+  width: 82%;
   display: flex;
 }
 .html_link {
   width: 100%;
 }
 #tuitui {
-  width: 270%;
+  width: 120%;
+  margin-top: 10%;
 }
 
 .footer {
