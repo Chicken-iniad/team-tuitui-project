@@ -95,6 +95,16 @@ a {
   text-decoration: none;
 }
 
+.shindan p {
+	margin: 0 10px 10px 20px;
+}
+
+.shindan h3 {
+	margin: 20px 10px 10px 10px;
+  border-bottom: solid 1px #cccccc;
+  color: #444444;
+}
+
 .shindan .q-choices {
 	display: flex;
 	margin-left: 0;
