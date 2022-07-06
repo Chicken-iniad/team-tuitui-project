@@ -109,6 +109,7 @@ a {
 
 .shindan p {
 	margin: 0 10px 10px 20px;
+  text-align: center;
 }
 
 .shindan h3 {
@@ -141,4 +142,8 @@ a {
 	-webkit-transform: translate3d(0px, 5px, 1px);
 	-moz-transform: translate3d(0px, 5px, 1px);
 	transform: translate3d(0px, 5px, 1px);
+}
+
+img {
+  width: 100%;
 }
