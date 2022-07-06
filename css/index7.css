@@ -49,6 +49,10 @@ a {
   background-color: #fff490;
 }
 
+.sidebar li:hover, .sidebar li:active, .sidebar li:focus {
+	background-color: #eee490;
+}
+
 .sidebar a {
   color: #444444;
   text-decoration: none;

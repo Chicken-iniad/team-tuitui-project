@@ -1,75 +1,168 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <title>パスタ診断</title>
-    <meta charset="UTF-8">
-    <script type="text/javascript" src="js/test_chart.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/index2.css">
-  </head>
 
-  <body>
-    <h1 id="title"><img id="icon" src="img/tuitui_icon.png" alt="チームﾂｲﾂｲアイコン"><a href="index.html"> ﾂｲﾂｲパスタレシピ</a></h1>
+<head>
+  <title>パスタ診断</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+    jQuery.noConflict();
+    (function($) {
+      $(function() {
+        $(".qa_btn").on("click", function() {
+          $(this).closest("div").css("display", "none");
+          id = $(this).attr("href");
+          $(id).fadeIn("500");
+          $("html,body").animate({
+            scrollTop: $("#contents-qa").offset().top
+          }, 'normal', 'swing');
+        });
+      })
+    })(jQuery)
+  </script>
 
-    <a href="#title" id="top">Top</a>
+  <link rel="stylesheet" type="text/css" href="css/index2.css">
+</head>
 
-    <div id="container">
-      <div class="sidebar">
-        <ul>
-          <li><a href="index.html">ホーム</a></li>
-          <li><a>レシピ診断</a></li>
-          <li><a href="index3.html">レシピ一覧</a></li>
-          <li><a href="index4.html">パスタ図鑑</a></li>
-          <li><a href="index5.html">調理器具</a></li>
-          <li><a href="index6.html">調味料</a></li>
-        </ul>
-      </div>
+<body>
+  <h1 id="title"><img id="icon" src="img/tuitui_icon.png" alt="チームﾂｲﾂｲアイコン"><a href="index.html"> ﾂｲﾂｲパスタレシピ</a></h1>
 
-      <div class="content">
-        <h2>いまのあなたにおすすめのパスタは？</h2>
-        <p>3つの質問であなたにおすすめのパスタをご案内します。</p>
-        <p>※個人的な見解ですので、参考程度にお考えください。</p>
-        <hr />
-        <div id="main">
-            <div id="question_area">
-                <div id="q1" class="txt_display">トマトはお好き？</div>
-                <div id="q2" class="txt_hide">ガッツリいきたい？</div>
-                <div id="q3" class="txt_hide">食べ応えが欲しい？</div>
-                <div id="q4" class="txt_hide">THE定番がいい？</div>
-                <div id="q5" class="txt_hide">1-1-2</div>
-                <div id="q6" class="txt_hide">1-2-1</div>
-                <div id="q7" class="txt_hide">1-2-2</div>
-            </div>
-            <div id="result_area" class="txt_hide">
-                <p>あなたにおすすめのプログラミング言語は……</p>
-                <div id="a1" class="txt_hide">
-                    <h2>VBA</h2>
-                    <p>普段のExcel業務を効率化できるので、目標と成果がはっきりしやすく学習しやすいです。</p>
-                    <p>Excelさえあれば動くので環境も準備しやすく、文法もそれほど難しくないのでプログラミング入門として最適です。</p>
-                    <p>ただし、MS Officeは有料なため、収入があって投資をいとわない社会人向けと言えるでしょう。</p>
-                </div>
-                <div id="a2" class="txt_hide">
-                    <h2>JavaScript</h2>
-                    <p>お金をかけず、Webブラウザさえあれば動くJavaScriptはかなりお手軽です。</p>
-                    <p>Webサイト制作やWebアプリで必要とされる人気の言語で、マスターすれば趣味から仕事まで選択肢がかなり広がります。</p>
-                    <p>HTMLやCSSもセットで覚える必要があるため勉強範囲は広いですが、ほとんどお金がかからないので学生向きといえるでしょう。</p>
-                </div>
-                <div id="a3" class="txt_hide">
-                    <h2>Python</h2>
-                    <p>Pythonはプログラミングの義務教育や情報処理技術者試験の選択問題にもなるほど現在の主流となっている言語です。</p>
-                    <p>文法がシンプルでわかりやすいだけでなく、WebアプリからAIの機械学習までできます。</p>
-                    <p>Pythonがインストールされていないと使えないですが、無料なのでその手間を惜しまなければハードルは低いです。</p>
-                </div>
-                <a href="javaScript:OnAgainClick();">もう1回</a>
-            </div>
-            <div id="btn_area" class="txt_display">
-                <a href="javascript:OnYesClick();" id="btn_yes">Yes</a>
-                <a href="javascript:OnNoClick();" id="btn_no">No</a>
-            </div>
+  <a href="#title" id="top">Top</a>
+
+  <div id="container">
+    <div class="sidebar">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a>レシピ診断</a></li>
+        <li><a href="index3.html">レシピ一覧</a></li>
+        <li><a href="index4.html">パスタ図鑑</a></li>
+        <li><a href="index5.html">調理器具</a></li>
+        <li><a href="index6.html">調味料</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h2>パスタ診断</h2>
+      <p>今日のあなたの気分からおすすめのパスタを診断</p>
+      <div class="shindan">
+        <div id="q_01">
+          <h3>トマト味の気分？</h3>
+          <ul class="q-choices">
+            <li><a class="qa_btn" href="#q_1-1">Yes</a></li>
+            <li><a class="qa_btn" href="#q_1-2">No</a></li>
+          </ul>
+        </div>
+
+        <div id="q_1-1" style="display: none;">
+          <h3>肉が食べたい？</h3>
+          <ul class="q-choices">
+            <li><a class="qa_btn" href="#q_1-1-1">Yes</a></li>
+            <li><a class="qa_btn" href="#q_1-1-2">No</a></li>
+          </ul>
+        </div>
+
+        <div id="q_1-2" style="display: none;">
+          <h3>肉が食べたい？</h3>
+          <ul class="q-choices">
+            <li><a class="qa_btn" href="#q_1-2-1">Yes</a></li>
+            <li><a class="qa_btn" href="#q_1-2-2">No</a></li>
+          </ul>
+        </div>
+
+        <div id="q_1-1-1" style="display: none;">
+          <h3>ひき肉を使ったパスタ？</h3>
+          <ul class="q-choices">
+            <li><a class="qa_btn" href="#a_01">Yes</a></li>
+            <li><a class="qa_btn" href="#a_02">No</a></li>
+          </ul>
+        </div>
+
+        <div id="q_1-1-2" style="display: none;">
+          <h3>冷たいものが食べたい？</h3>
+          <ul class="q-choices">
+            <li><a class="qa_btn" href="#a_03">Yes</a></li>
+            <li><a class="qa_btn" href="#a_04">No</a></li>
+          </ul>
+        </div>
+
+        <div id="q_1-2-1" style="display: none;">
+          <h3>和風パスタが食べたい？</h3>
+          <ul class="q-choices">
+            <li><a class="qa_btn" href="#a_05">Yes</a></li>
+            <li><a class="qa_btn" href="#a_06">No</a></li>
+          </ul>
+        </div>
+
+        <div id="q_1-2-2" style="display: none;">
+          <h3>冷たいものが食べたい？</h3>
+          <ul class="q-choices">
+            <li><a class="qa_btn" href="#a_07">Yes</a></li>
+            <li><a class="qa_btn" href="#a_08">No</a></li>
+          </ul>
+        </div>
+
+        <div id="a_01" style="display: none;">
+          <h3>診断結果</h3>
+          <p>ミートソース</p>
+          <p class="back"><a class="qa_btn" href="#q_01">もう一度診断する</a></p>
+          <p><a href="">診断結果をツイートで共有する</a></p>
+        </div>
+
+        <div id="a_02" style="display: none;">
+          <h3>診断結果</h3>
+          <p>鶏肉のトマトパスタ</p>
+          <p><a class="qa_btn" href="#q_01">もう一度診断する</a></p>
+          <p><a href="">診断結果をツイートで共有する</a></p>
+        </div>
+
+        <div id="a_03" style="display: none;">
+          <h3>診断結果</h3>
+          <p>トマトの冷製パスタ</p>
+          <p class="back"><a class="qa_btn" href="#q_01">もう一度診断する</a></p>
+          <p><a href="">診断結果をツイートで共有する</a></p>
+        </div>
+
+        <div id="a_04" style="display: none;">
+          <h3>診断結果</h3>
+          <p>ブッタネスカ</p>
+          <p class="back"><a class="qa_btn" href="#q_01">もう一度診断する</a></p>
+          <p><a href="">診断結果をツイートで共有する</a></p>
+        </div>
+
+        <div id="a_05" style="display: none;">
+          <h3>診断結果</h3>
+          <p>チキンソテーの和風パスタ</p>
+          <p class="back"><a class="qa_btn" href="#q_01">もう一度診断する</a></p>
+          <p><a href="">診断結果をツイートで共有する</a></p>
+        </div>
+
+        <div id="a_06" style="display: none;">
+          <h3>診断結果</h3>
+          <p>カルボナーラ</p>
+          <p class="back"><a class="qa_btn" href="#q_01">もう一度診断する</a></p>
+          <p><a href="">診断結果をツイートで共有する</a></p>
+        </div>
+
+        <div id="a_07" style="display: none;">
+          <h3>診断結果</h3>
+          <p>サーモンのパスタ</p>
+          <p class="back"><a class="qa_btn" href="#q_01">もう一度診断する</a></p>
+          <p><a href="">診断結果をツイートで共有する</a></p>
+        </div>
+
+        <div id="a_08" style="display: none;">
+          <h3>診断結果</h3>
+          <p>ジェノベーゼ</p>
+          <p class="back"><a class="qa_btn" href="#q_01">もう一度診断する</a></p>
+          <p><a href="">診断結果をツイートで共有する</a></p>
         </div>
       </div>
+
     </div>
-    <div class="footer">
-      Team-TuiTui-Project
-    </div>
-  </body>
+  </div>
+  <div class="footer">
+    Team-TuiTui-Project
+  </div>
+</body>
+
 </html>
