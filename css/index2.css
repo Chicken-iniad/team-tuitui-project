@@ -158,7 +158,7 @@ body {
 	box-shadow: 0px 5px 0px #2f64c2;
 }
 .shindan .q-choices li#blue a:hover, .shindan .q-choices li a:active, .shindan .q-choices li a:focus {
-	background-color: #86bde2;
+	background-color: #81b1d5;
 	box-shadow: none;
 	-webkit-transform: translate3d(0px, 5px, 1px);
 	-moz-transform: translate3d(0px, 5px, 1px);
