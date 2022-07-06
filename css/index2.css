@@ -119,7 +119,6 @@ a {
 
 .shindan .q-choices {
 	display: flex;
-	margin-left: 0;
 }
 .shindan .q-choices li {
 	list-style:none;
