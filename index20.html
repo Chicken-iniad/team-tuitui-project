@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>パスタ診断</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" >
+    jQuery.noConflict();
+(function($) {
+$(function(){
+  $(".qa_btn").on("click", function() {
+    $(this).closest("div").css("display","none");
+    id = $(this).attr("href");
+    $(id).fadeIn("500");
+    $("html,body").animate({scrollTop: $("#contents-qa").offset().top}, 'normal','swing');
+  });
+});
+})(jQuery)
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/index2_1.css">
+  </head>
+
+  <body>
+    <h1 id="title"><img id="icon" src="img/tuitui_icon.png" alt="チームﾂｲﾂｲアイコン"><a href="index.html"> ﾂｲﾂｲパスタレシピ</a></h1>
+
+    <a href="#title" id="top">Top</a>
+
+    <div id="container">
+      <div class="sidebar">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a>レシピ診断</a></li>
+          <li><a href="index3.html">レシピ一覧</a></li>
+          <li><a href="index4.html">パスタ図鑑</a></li>
+          <li><a href="index5.html">調理器具</a></li>
+          <li><a href="index6.html">調味料</a></li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <p id="contents-qa">診断コンテンツ【サンプル】</p>
+<div class="shindan">
+<div id="q_01">
+	<p>「りんご」と「みかん」どちらが好き？</p>
+	<ul class="q-choices">
+		<li><a class="qa_btn" href="#q_02">りんご</a></li>
+		<li><a class="qa_btn" href="#q_03">みかん</a></li>
+	</ul>
+</div>
+
+<div id="q_02" style="display: none;">
+	<p>りんごの「ジュース」と「ジャム」どっちがいい？</p>
+	<ul class="q-choices">
+		<li><a class="qa_btn" href="#q_04">ジュース</a></li>
+		<li><a class="qa_btn" href="#q_05">ジャム</a></li>
+	</ul>
+</div>
+
+<div id="q_03" style="display: none;">
+	<p>みかんの「ジュース」と「ジャム」どっちがいい？</p>
+	<ul class="q-choices">
+		<li><a class="qa_btn" href="#q_06">ジュース</a></li>
+		<li><a class="qa_btn" href="#q_07">ジャム</a></li>
+	</ul>
+</div>
+
+<div id="q_04" style="display: none;">
+	<p>りんごジュース</p>
+	<p><a class="qa_btn" href="#q_01">もう一度診断する</a></p>
+</div>
+
+<div id="q_05" style="display: none;">
+	<p>りんごジャム</p>
+	<p><a class="qa_btn" href="#q_01">もう一度診断する</a></p>
+</div>
+
+<div id="q_06" style="display: none;">
+	<p>みかんジュース</p>
+	<p><a class="qa_btn" href="#q_01">もう一度診断する</a></p>
+</div>
+
+<div id="q_07" style="display: none;">
+	<p>みかんジャム</p>
+	<p><a class="qa_btn" href="#q_01">もう一度診断する</a></p>
+</div>
+</div>
+
+    </div>
+    <div class="footer">
+      Team-TuiTui-Project
+    </div>
+  </body>
+</html>
