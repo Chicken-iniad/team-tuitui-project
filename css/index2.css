@@ -1,6 +1,7 @@
 h1 {
   margin: 0;
-  padding: 10px 10px 10px 10px;
+  padding-top: 10px;
+  padding-left: 10px;
   border-bottom: solid 4px #ff871f;
   font-family: sans-serif;
   font-size: 36px;
@@ -9,7 +10,7 @@ h1 {
   background-color: #fff490;
 }
 #icon {
-  width: 40px;
+  width: 300px;
   background-color: #fff490;
 }
 
