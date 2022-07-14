@@ -61,6 +61,7 @@ a {
 .content {
   width: 75%;
   margin: 10px 0 10px 0;
+  padding-bottom: 100%;
 }
 
 .content > h2 {
